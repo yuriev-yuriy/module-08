@@ -69,3 +69,160 @@ ol {
 a {
   text-decoration: none;
 }
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner {
+  background-color: #1a1915;
+  background-image: url(../images/mobile-banner.png);
+  background-size: cover;
+  min-height: 540px;
+  padding: 20px 0 140px;
+}
+
+.banner button {
+  font-weight: 700;
+  line-height: 16px;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0);
+  padding: 12px;
+  cursor: pointer;
+}
+
+.navigation button:hover {
+  border: 2px solid #fff;
+  border-radius: 20px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  display: block;
+  margin: 106px 0 30px;
+}
+
+.banner h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+.banner p {
+  font-family: var(--font);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  color: #fff;
+  margin: 0 0 18px;
+}
+
+.banner span {
+  display: block;
+}
+.banner .find-partner {
+  background-color: var(--third-color);
+  border-radius: 20px;
+}
+
+.partners {
+  padding: 72px 0 56px;
+}
+
+.partners h2,
+ul,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.partner-list {
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+.partners h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--color);
+  margin-bottom: 20px;
+}
+
+.partner-list-image {
+  margin: 0 auto;
+  position: relative;
+  width: 121px;
+  height: 121px;
+}
+
+.icon::after {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: solid 4px rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+.tv-icon::after {
+  background-image: url(../images/1st-icon.png);
+  background-color: var(--third-color);
+}
+
+.science-icon::after {
+  background-image: url(../images/2nd-icon.png);
+  background-color: rgb(255, 165, 7);
+}
+
+.cup-icon::after {
+  background-image: url(../images/3rd-icon.png);
+  background-color: rgb(28, 215, 173);
+}
+
+.message-icon::after {
+  background-image: url(../images/4th-icon.png);
+  background-color: rgb(78, 115, 219);
+}
+
+.partner-list-item h3 {
+  margin: 22px 0 20px;
+  font-weight: 700;
+  line-height: 16px;
+  color: var(--color);
+}
+
+.partner-list-item p {
+  margin-bottom: 30px;
+  font-weight: 300;
+  line-height: 16px;
+  color: var(--second-color);
+}
+
+.load-more {
+  font-weight: 700;
+  line-height: 16px;
+  color: var(--third-color);
+  border: 2px solid var(--third-color);
+  border-radius: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px 74px;
+}
