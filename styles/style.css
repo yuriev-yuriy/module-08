@@ -76,6 +76,11 @@ a {
   text-align: center;
 }
 
+.navigation-list {
+  display: flex;
+  justify-content: center;
+}
+
 .banner {
   background-color: #1a1915;
   background-image: url(../images/mobile-banner.png);
@@ -93,6 +98,7 @@ a {
   border: 2px solid rgba(255, 255, 255, 0);
   padding: 12px;
   cursor: pointer;
+  outline: none;
 }
 
 .navigation button:hover {
@@ -210,7 +216,7 @@ p {
 }
 
 .partner-list-item p {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   font-weight: 300;
   line-height: 16px;
   color: var(--second-color);
@@ -225,4 +231,106 @@ p {
   background-color: transparent;
   cursor: pointer;
   padding: 10px 74px;
+  outline: none;
+  margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+  .partner-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 660px;
+  }
+
+  .banner {
+    padding: 38px 0 234px;
+    background-image: url(../images/tablet-banner.png);
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 auto;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .banner h1 {
+    margin: 150px auto 50px;
+    font-size: 52px;
+    line-height: 62px;
+    max-width: 512px;
+  }
+
+  .banner p {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 36px;
+  }
+
+  .banner span {
+    display: inline;
+  }
+
+  .partners {
+    padding-bottom: 40px;
+  }
+
+  .partner-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 492px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .partner-list-item {
+    max-width: 236px;
+  }
+
+  .partner-list-item:nth-child(2) {
+    order: 1;
+  }
+  .partner-list-item:last-child {
+    order: 2;
+  }
+
+  .partners h2 {
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .partner-list-item:not(:nth-child(2n)) {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 940px;
+  }
+
+  .banner {
+    background-image: url(../images/desktop-banner.png);
+  }
+
+  .partners {
+    padding-bottom: 72px;
+  }
+
+  .partner-list {
+    max-width: 940px;
+  }
+
+  .partner-list-item {
+    max-width: 222px;
+  }
 }
